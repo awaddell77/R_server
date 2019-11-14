@@ -1,0 +1,6 @@
+
+*.pyc
+*.csv
+type_tst.py
+TstObj.py
+thread_tst.py
