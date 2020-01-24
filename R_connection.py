@@ -2,8 +2,8 @@ from S_connection import *
 import threading
 #for threaded server
 class R_connection(S_connection):
-	def __init__(self, connection, response_queue, log_lst, lst_lock, resp_lock):
-		super().__init__(connection, response_queue, log_lst, lst_lock, resp_lock)
+	def __init__(self, connection, response_queue, log_lst, lst_lock, resp_lock, **kwargs):
+		super().__init__(connection, response_queue, log_lst, lst_lock, resp_lock,**kwargs)
 	def receive_rep(self, chunk_size = 1024):
 		results = []
 		old_msg = bytes()

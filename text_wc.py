@@ -15,6 +15,7 @@ def text_wc(x,output='listoutput.txt', kwargs**):#takes list writes to text
     
     with open(name, 'w') as wf:
         for i in range(0, len(n_l)):
+            new = n_l[i]
             wf.writelines(new)
     #print("%s saved to %s" % (output, output))
     return
